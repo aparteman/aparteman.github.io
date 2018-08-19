@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Apartemanku.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="font/font-style.css" rel="stylesheet">
+    <link href="css/skin-aparteman.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/homepage/logo/logo.png" class="img-fluid" alt="Logo-apartemanku">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promotions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary btn-custom-sb">Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary btn-outline-primary btn-outline-custom">Submiy My Apartment</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('images/homepage/slider/1.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>First Slide</h3>
+                        <p>This is a description for the first slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('images/homepage/slider/2.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Second Slide</h3>
+                        <p>This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Third Slide</h3>
+                        <p>This is a description for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <!-- Card room -->
+
+    <div class="container">
+        <div class="card card-room h-100">
+            <p class="card-header bg-custom proxima-bold ls-05 f-white">Booking Now</p>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <p>Destinations</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col">
+                        <p>Category</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col">
+                        <p>Check In</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col">
+                        <p>Check Out</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col">
+                        <p>Type Room</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col">
+                        <p class="vhd">-</p>
+                        <button type="button" class="btn-lg btn-primary btn-custom-sb form-control">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <p class="my-4 proxima-regular f-25 ls-11 f-black py-4">Rekomendasi Apartemen Untuk Anda</p>
+
+        <!-- Catalog Section -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Catalog Section -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Catalog Section -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/7.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/8.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card card-catalog">
+                    <img class="card-img-top" src="images/homepage/dummy/9.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Vivo Apartement</h5>
+                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                        <div class="feature">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-wifi">Wifi</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-beds">6 Beds</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-floor">Floor 2</span>
+                                </div>
+                            </div>
+                            <div class="mt-1"></div>
+                            <div class="row">
+                                <div class="col">
+                                    <span class="catalog-baths">4 Baths</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-garage">Garage</span>
+                                </div>
+                                <div class="col">
+                                    <span class="catalog-tv">Tv</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="final-price">IDR 630.000</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <p class="proxima-regular f-25 ls-11 py-4 f-black">Tempat Terpopular</p>
+
+        <div class="favourite-place">
+            <div class="row">
+                <div class="col-7 col-xs-12">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="images/homepage/favourite-place/sleman.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <p><span class="badge badge-secondary badge-custom">14 Apartemen</span></p>
+                                    <h5 class="card-title">SLEMAN</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="images/homepage/favourite-place/bantul.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <p><span class="badge badge-secondary badge-custom">7 Apartemen</span></p>
+                                    <h5 class="card-title">BANTUL</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="images/homepage/favourite-place/kulon.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <p><span class="badge badge-secondary badge-custom">9 Apartemen</span></p>
+                                    <h5 class="card-title">KULON PROGO</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+
+                    <div class="card bg-dark text-white pb-2">
+                        <img class="card-img" src="images/homepage/favourite-place/tugu.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <p><span class="badge badge-secondary badge-custom">7 Apartemen</span></p>
+                            <h5 class="card-title">JOGJA KOTA</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <p class="proxima-regular f-25 ls-11 f-black py-5 text-center">Tentang Aparteman</p>
+
+        <div class="about">
+            <div class="row">
+                <div class="col-5">
+                    <div class="embed-responsive embed-responsive-4by3 vid-shadow">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="right-side">
+                        <p>Daryl’s clients call him the best coach you have never heard of. Many of them turn to him after failing with outdated methods that are commonplace today. By using precise assessments and feedback, these athletes can achieve more.</p>
+                        <a href="#" type="button" class="btn btn-primary btn-custom-big">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- /.container -->
+
+    <!-- Newsletter -->
+
+    <div class="newsletter mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="nl-left">
+                        <p>Subscribe to our newsletter now and be the first to know
+                            <br>about Aparteman's latest promos!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="nl-right">
+                        <div class="form-control panel-custom-newsletter">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-custom-newsletter" placeholder="Enter Your Mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary btn-custom-sb" type="button">Kirim</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-footer ">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>Navigations</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Features</a></li>
+                        <li><a href="contact.html">Blog</a></li>
+                        <li><a href="about.html">Pricing</a></li>
+                        <li><a href="about.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>Learn &amp; Grow</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Career</a></li>
+                        <li><a href="contact.html">Work</a></li>
+                        <li><a href="about.html">Disclaimer</a></li>
+                        <li><a href="about.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>About Us</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Team’s</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="about.html">Privacy Policy</a></li>
+                        <li><a href="about.html">Terms Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>Social Media</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Facebook</a></li>
+                        <li><a href="about.html">Instagram</a></li>
+                        <li><a href="about.html">Twitter</a></li>
+                        <li><a href="about.html">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="footers-logo">
+                        <img src="images/homepage/logo/logo-footer.svg" class="img-fluid" alt="Logo">
+                    </div>
+                    <div class="footers-info mt-1">
+                        <ul class="list-unstyled">
+                            <li>
+                                <span class="vhd">-</span>
+                            </li>
+                            <li>
+                                <span>Info@Aparteman.com</span>
+                            </li>
+                            <li>
+                                <span>47 Alexys Lodge</span>
+                            </li>
+                            <li>
+                                <span>743-097-1056</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-white arr">Aparteman 2018 @ All Right Reserved</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

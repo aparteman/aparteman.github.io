@@ -1,0 +1,75 @@
+/*Custom skin for apartemanku.com*/
+
+
+/*
+1. Color
+2. Navbar
+3. Badge
+
+*/
+
+
+/*== 1. Color ==*/
+
+.bg-custom {
+    background: #f85656;
+}
+.bg-footer {
+    background: #222222;
+}
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+input[type="text"],
+textarea {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/*== 2. Navbar ==*/
+
+.btn-custom-sb {
+    font-family: 'Proxima-Semibold';
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    background-color: #f85656;
+    border-color: transparent;
+}
+.btn-outline-custom {
+    font-size: 14px;
+    border-radius: 3px;
+    border: solid 1px #f85656;
+    font-family: 'Proxima-Regular';
+    color: #f85656;
+    letter-spacing: 0.5px;
+}
+.btn-custom-big {
+    border: solid 1px transparent;
+    border-radius: 25px;
+    background: rgb(239, 35, 60, 0.2);
+    color: #ef233c;
+    border: none;
+    -webkit-appearance: none !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Open-Bold';
+    font-size: 14px;
+}
+
+/*== 3. Badge ==*/
+
+.badge-custom {
+    opacity: 0.4;
+    border-radius: 13.5px;
+    background-color: #ffffff;
+    font-family: 'Proxima-Semibold';
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    padding: 5px 15px 5px 15px;
+}

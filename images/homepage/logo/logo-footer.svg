@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="204" height="30" viewBox="0 0 204 30">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#FFF" font-family="ProximaNova-Extrabld, Proxima Nova" font-size="21" font-weight="600" letter-spacing=".888" transform="translate(0 -3)">
+            <tspan x="37.991" y="19">APARTEMANKU</tspan>
+        </text>
+        <text fill="#FFF" font-family="ProximaNova-Bold, Proxima Nova" font-size="8" font-weight="bold" letter-spacing="2.33" transform="translate(0 -3)">
+            <tspan x="37.219" y="31">Solusi untuk apartemen anda</tspan>
+        </text>
+        <path fill="#FFF" d="M20.483.5L9.5 29H5a5 5 0 0 1-5-5V5.5a5 5 0 0 1 5-5h15.483zm7.686.286A5.002 5.002 0 0 1 31.5 5.5v3.962L28.17.786zm2.89 25.268A5.001 5.001 0 0 1 26.5 29H16.396l2.295-6.355h11.16l1.209 3.41zM28 17l-3.342-9.5L21 16.991z"/>
+        <path fill="#000" d="M4.427 5.18L8.7 5.17 8.713 9.2l-4.295-.001zM9.427 5.18L13.7 5.17l.012 4.028-4.295-.001zM4.427 10.18L8.7 10.17l.012 4.028-4.295-.001zM9.427 10.18l4.274-.009.012 4.028-4.295-.001zM4.427 15.18L8.7 15.17l.012 4.028-4.295-.001zM9.427 15.18l4.274-.009.012 4.028-4.295-.001zM4.427 20.18L8.7 20.17l.012 4.028-4.295-.001zM9.427 20.18l4.274-.009.012 4.028-4.295-.001z"/>
+    </g>
+</svg>
