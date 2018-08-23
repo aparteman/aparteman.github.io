@@ -17,6 +17,7 @@
     <link href="fonts/font_awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="fonts/font-style.css" rel="stylesheet">
     <link href="css/datepicker.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
     <link href="css/skin-aparteman.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -50,11 +51,99 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary btn-custom-sb">Login</button>
+                    <li class="nav-item dropdown" id="myDropdown">
+                        <button type="button" class="btn btn-primary btn-custom-sb" data-toggle="dropdown">Sign In</button>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-custom">
+
+                            <ul class="tabs row">
+                                <li class="tab-link current col" data-tab="tab-1" id="login">Log In</li>
+                                <li class="tab-link col" data-tab="tab-2" id="register">Register</li>
+                            </ul>
+
+                            <div id="tab-1" class="tab-content current">
+                                <form class="px-4 py-3">
+                                    <div class="form-group">
+                                        <p>Log in to your Account</p>
+                                        <label>Email or mobile no.</label>
+                                        <input type="email" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label>Password</label>
+                                            </div>
+                                            <div class="col">
+                                                <label class="float-right"><a href="#">Forgot Password</a></label>
+                                            </div>
+                                        </div>
+
+                                        <input type="password" class="form-control" placeholder="">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-custom-sb form-control my-2">Sign in</button>
+                                </form>
+                                <div class="footer-login">
+                                    <div class="px-4 pt-3 pb-4">
+                                        <center><label>Or log in with</label></center>
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="submit" class="btn btn-primary btn-facebook form-control">Facebook</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="submit" class="btn btn-info btn-twitter form-control">Twitter</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                <form class="px-4 py-3">
+                                    <div class="form-group">
+                                        <p>Register your Account</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <label>Full Name</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col">
+                                                <label>Phone Number</label>
+                                                <input type="text" class="form-control"  placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <label>Country</label>
+                                                <input type="text" class="form-control"  placeholder="">
+                                            </div>
+                                            <div class="col">
+                                                <label>Password</label>
+                                                <input type="password" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col">
+                                                <label>Confrim Password</label>
+                                                <input type="text" class="form-control"  placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">I have read and agreed to the Terms and Conditions from apartemanku.com</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-custom-sb form-control my-2">Register</button>
+                                </form>
+                            </div>
+                            <!-- container -->
+
+                        </div>
                     </li>
+
                     <li class="nav-item">
-                        <button type="button" class="btn btn-primary btn-outline-primary btn-outline-custom">Submiy My Apartment</button>
+                        <button type="button" class="btn btn-primary btn-outline-primary btn-outline-custom">Submit My Apartment</button>
                     </li>
                 </ul>
             </div>
@@ -118,7 +207,7 @@
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-2">
                         <p>Category</p>
-                        <select class="custom-select form-control">
+                        <select class="selectpicker form-control">
                             <option selected>Days</option>
                             <option value="1">Months</option>
                             <option value="2">Years</option>
@@ -134,10 +223,12 @@
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-2">
                         <p>Type Room</p>
-                        <select class="custom-select form-control">
+                        <select class="selectpicker form-control">
                             <option selected>Resident</option>
-                            <option value="1">Apartment</option>
-                            <option value="2">Hotel</option>
+                            <option value="1">Studio</option>
+                            <option value="2">My Order</option>
+                            <option value="3">1 Badroom</option>
+                            <option value="4">2 Badroom</option>
                         </select>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-2">
@@ -154,7 +245,7 @@
         <div class="form-group row py-4 my-4">
             <label class=" proxima-regular f-25 ls-11 f-black col-sm-10 col-form-label">Rekomendasi Apartemen Untuk Anda</label>
             <div class="col-sm-2">
-                <select class="custom-select form-control mt-1">
+                <select class="selectpicker form-control mt-1">
                     <option selected>Yogyakarta</option>
                     <option value="1">Klaten</option>
                     <option value="2">Solo</option>
@@ -759,6 +850,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/datepicker.min.js"></script>
     <script src="js/destinations.js"></script>
     <script src="js/style.js"></script>

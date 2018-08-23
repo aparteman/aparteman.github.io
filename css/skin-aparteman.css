@@ -4,6 +4,7 @@
 1. Color
 2. Navbar
 3. Badge
+4. Form
 
 */
 
@@ -17,7 +18,10 @@
     background: #222222;
 }
 
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle:active,
+.btn-lg:focus,
 .btn:focus,
+.btn-lg:active,
 .btn:active {
     outline: none !important;
     -webkit-box-shadow: none !important;
@@ -25,16 +29,39 @@
 }
 
 .form-control:focus {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border-color: #ced4da;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #ced4da;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 input[type="text"],
 textarea {
     outline: none;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+}
+
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle, .btn-light:not(:disabled):not(.disabled).active {
+    background: transparent;
+    border: 1px solid #ced4da;
+}
+
+ul.typeahead li a:not(:disabled):not(.disabled) {
+    font-family: 'Proxima-Bold';
+    border: solid 1px rgb(151,151,151,0.2);
+    background: transparent;
+    color: #212529;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active  {
+    background-color: #f85656;
+}
+
+.btn-primary:not(:disabled):not(.disabled):focus {
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 /*== 2. Navbar ==*/
@@ -48,6 +75,12 @@ textarea {
     border-color: transparent;
 }
 
+.btn-custom-sb:hover,
+.btn-custom-sb:active {
+    background-color: #f85656;
+    border-color: transparent;
+}
+
 .btn-outline-custom {
     font-size: 14px;
     border-radius: 3px;
@@ -55,6 +88,11 @@ textarea {
     font-family: 'Proxima-Regular';
     color: #f85656;
     letter-spacing: 0.5px;
+}
+
+.btn-outline-custom:hover {
+    background-color: #f85656;
+    border-color: transparent;
 }
 
 .btn-custom-big {
@@ -69,6 +107,29 @@ textarea {
     font-size: 14px;
 }
 
+.btn-custom-big:hover {
+    background: rgb(239, 35, 60, 0.2);
+    color: #ef233c;
+}
+
+.btn:hover,
+.btn-lg:hover {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-facebook,
+.btn-facebook:hover {
+    background: #3b5998;
+    border-color: transparent;
+}
+
+.btn-twitter,
+.btn-twitter:hover {
+    background: #4285f4;
+    border-color: transparent;
+}
+
 /*== 3. Badge ==*/
 
 .badge-custom {
@@ -80,4 +141,31 @@ textarea {
     font-size: 12px;
     letter-spacing: 0.6px;
     padding: 5px 15px 5px 15px;
+}
+
+/*== 4. Form ==*/
+.btn-light {
+    background: transparent;
+    border: 1px solid #ced4da;
+}
+.btn-light:hover, .btn-light:focus {
+    background: transparent;
+    border: 1px solid #ced4da;
+}
+.bootstrap-select .dropdown-menu {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0;
+}
+.bootstrap-select .dropdown-item.active, .bootstrap-select .dropdown-item:active {
+    background-color: #f85656;
+    font-family: 'Proxima-Bold';
+    border: none;
+    outline: none;
+}
+.bootstrap-select .dropdown-menu li a {
+    font-family: 'Proxima-Bold';
+    border: solid 1px rgb(151,151,151,0.2);
+    border-top: 0;
 }
