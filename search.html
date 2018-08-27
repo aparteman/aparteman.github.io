@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Apartemanku.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="fonts/font_awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fonts/font-style.css" rel="stylesheet">
+    <link href="css/datepicker.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/skin-aparteman.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-register">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/homepage/logo/logo.png" class="img-fluid" alt="Logo-apartemanku">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promotions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="row">
+                            <div class="col icon-user px-0">
+                                <img src="images/register_success/profile.jpg" class="img-fluid">
+                            </div>
+                            <div class="col px-0">
+                                <div class="dropdown dropdown-user">
+                                    <button class="btn btn-trans btn-custom-sb dropdown-toggle" type="button" data-toggle="dropdown">Sulton Hand</button>
+
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Wishlist</a>
+                                        <a class="dropdown-item" href="#">My Order</a>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary btn-outline-primary btn-outline-custom">Submit My Apartment</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="search-room py-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="float-left">
+                        <h5>Hasil pencarian hotel di Yogyakarta, Indonesia</h5>
+                        <p>20 Agu 2018 - 21 Agu 2018</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="float-right">
+                        <div class="accordion">
+                        <button type="button" class="btn-lg btn-primary btn-custom-sb" data-toggle="collapse" data-target="#collapseSearch">Ganti Pencarian</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            
+            <div id="collapseSearch" class="collapse">
+                <div class="card card-search card-room h-100">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <p>Destinations</p>
+                        <div class="input-group">
+                            <input type="text" class="form-control typeahead" name="query" id="query" placeholder="Lokasi" data-provide="typeahead" autocomplete="off">
+                            <div class="input-group-append">
+                                <span class="input-group-text text-typeahead" id="basic-addon2">
+                                    <i class="fa fa-map-marker"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <p>Category</p>
+                        <select class="selectpicker form-control">
+                            <option selected>Days</option>
+                            <option value="1">Months</option>
+                            <option value="2">Years</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <p>Check In</p>
+                        <input id="datepicker1" class="form-control datepick" type="text">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <p>Check Out</p>
+                        <input id="datepicker2" class="form-control datepick" type="text">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <p>Type Room</p>
+                        <select class="selectpicker form-control">
+                            <option selected>Resident</option>
+                            <option value="1">Studio</option>
+                            <option value="2">My Order</option>
+                            <option value="3">1 Badroom</option>
+                            <option value="4">2 Badroom</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <p class="vhd">-</p>
+                        <button type="button" class="btn-lg btn-primary btn-custom-sb form-control">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+            
+            <hr class="grid-aparteman">
+            <div class="search-room-item mt-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="search-tab">
+
+                            <ul class="tabs row mb-0">
+                                <li class="tab-link current col" data-tab="tab-3">Filter</li>
+                                <li class="tab-link col" data-tab="tab-4">Map View</li>
+                            </ul>
+
+                            <div id="tab-3" class="tab-content current">
+                                <div class="accordion ac-aparteman">
+                                    <div class="card">
+                                        <div class="card-header bg-transparent">
+                                            <h5 class="mb-0">
+                                        <a class="ac-link" data-toggle="collapse" data-target="#collapse1">
+                                          Akomodasi
+                                        </a>
+                                      </h5>
+                                        </div>
+                                        <div id="collapse1" class="collapse">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                                                        <label class="custom-control-label" for="customRadio1">Ramah Keluarga</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio2">Best Pick</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio3">Mewah</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio4">Budget</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio5">Pemenang Penghargaan</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion ac-aparteman">
+                                    <div class="card">
+                                        <div class="card-header bg-transparent">
+                                            <h5 class="mb-0">
+                                        <a class="ac-link" data-toggle="collapse" data-target="#collapse2">
+                                          Urutkan Hasil Pencarian
+                                        </a>
+                                      </h5>
+                                        </div>
+                                        <div id="collapse2" class="collapse">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio1a" name="customRadio" class="custom-control-input" checked>
+                                                        <label class="custom-control-label" for="customRadio1a">Harga Tertinggi</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio2a" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio2a">Harga Terendah</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio3a" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio3a">Popularitas</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio4a" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio4a">Nilai Review</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion ac-aparteman">
+                                    <div class="card">
+                                        <div class="card-header bg-transparent">
+                                            <h5 class="mb-0">
+                                        <a class="ac-link" data-toggle="collapse" data-target="#collapse3">
+                                          Kisaran Harga Permalam
+                                        </a>
+                                      </h5>
+                                        </div>
+                                        <div id="collapse3" class="collapse">
+                                            <div class="card-body">
+                                                <div class="price-range">
+                                                    <label for="customRange1">Example range</label>
+                                                    <input type="range" class="custom-range" id="customRange1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion ac-aparteman">
+                                    <div class="card">
+                                        <div class="card-header bg-transparent">
+                                            <h5 class="mb-0">
+                                        <a class="ac-link" data-toggle="collapse" data-target="#collapse4">
+                                          Type Room
+                                        </a>
+                                      </h5>
+                                        </div>
+                                        <div id="collapse4" class="collapse">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio1b" name="customRadio" class="custom-control-input" checked>
+                                                        <label class="custom-control-label" for="customRadio1b">Studio</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio2b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio2b">1 Bedroom</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio3b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio3b">2 Bedroom</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio4b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio4b">3 Bedroom</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio5b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio5b">4 Bedroom</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio6b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio6b">Studio Deluxe</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio7b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio7b">Studio Eklusive</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio8b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio8b">Residence</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio9b" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio9b">Luxury</label>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion ac-aparteman">
+                                    <div class="card">
+                                        <div class="card-header bg-transparent">
+                                            <h5 class="mb-0">
+                                        <a class="ac-link" data-toggle="collapse" data-target="#collapse5">
+                                          Area
+                                        </a>
+                                      </h5>
+                                        </div>
+                                        <div id="collapse5" class="collapse">
+                                            <div class="card-body">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Sleman</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Kaliurang</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">Kota Gede</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Parangtritis</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                <label class="custom-control-label" for="customCheck5">Bantul</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                <label class="custom-control-label" for="customCheck6">Malioboro</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                <label class="custom-control-label" for="customCheck7">Babarsari</label>
+                            </div>                                       
+                                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion ac-aparteman">
+                                    <div class="card">
+                                        <div class="card-header bg-transparent">
+                                            <h5 class="mb-0">
+                                        <a class="ac-link" data-toggle="collapse" data-target="#collapse6">
+                                          Fasilitas
+                                        </a>
+                                      </h5>
+                                        </div>
+                                        <div id="collapse6" class="collapse">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1a">
+                                <label class="custom-control-label" for="customCheck1a">Wifi</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2a">
+                                <label class="custom-control-label" for="customCheck2a">Garasi / Parkiran</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3a">
+                                <label class="custom-control-label" for="customCheck3a">TV</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4a">
+                                <label class="custom-control-label" for="customCheck4a">AC</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5a">
+                                <label class="custom-control-label" for="customCheck5a">Kolam Renang</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6a">
+                                <label class="custom-control-label" for="customCheck6a">Shower</label>
+                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="tab-4" class="tab-content">
+                                <div id="map">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="card card-catalog">
+                                    <img class="card-img-top" src="images/homepage/dummy/2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5>Vivo Apartement</h5>
+                                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                                        <div class="feature">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="catalog-wifi">Wifi</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-beds">6 Beds</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-floor">Floor 2</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1"></div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="catalog-baths">4 Baths</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-garage">Garage</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-tv">Tv</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="price mt-3">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="final-price">IDR 630.000</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-4">
+                                <div class="card card-catalog">
+                                    <img class="card-img-top" src="images/homepage/dummy/3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5>Vivo Apartement</h5>
+                                        <p class="locate">918 Lucio Mountains Suite 346</p>
+                                        <div class="feature">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="catalog-wifi">Wifi</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-beds">6 Beds</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-floor">Floor 2</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1"></div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="catalog-baths">4 Baths</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-garage">Garage</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="catalog-tv">Tv</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="price mt-3">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="final-price">IDR 630.000</p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-custom-sb form-control">View Detail</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-footer ">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>Navigations</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Features</a></li>
+                        <li><a href="contact.html">Blog</a></li>
+                        <li><a href="about.html">Pricing</a></li>
+                        <li><a href="about.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>Learn &amp; Grow</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Career</a></li>
+                        <li><a href="contact.html">Work</a></li>
+                        <li><a href="about.html">Disclaimer</a></li>
+                        <li><a href="about.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>About Us</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Team’s</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="about.html">Privacy Policy</a></li>
+                        <li><a href="about.html">Terms Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <p>Social Media</p>
+                    <ul class="list-unstyled">
+                        <li><a href="maintenance.html">Facebook</a></li>
+                        <li><a href="about.html">Instagram</a></li>
+                        <li><a href="about.html">Twitter</a></li>
+                        <li><a href="about.html">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="footers-logo">
+                        <img src="images/homepage/logo/logo-footer.svg" class="img-fluid" alt="Logo">
+                    </div>
+                    <div class="footers-info mt-1">
+                        <ul class="list-unstyled">
+                            <li>
+                                <span class="vhd">-</span>
+                            </li>
+                            <li>
+                                <span>Info@Aparteman.com</span>
+                            </li>
+                            <li>
+                                <span>47 Alexys Lodge</span>
+                            </li>
+                            <li>
+                                <span>743-097-1056</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-white arr">Aparteman 2018 @ All Right Reserved</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/destinations.js"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>

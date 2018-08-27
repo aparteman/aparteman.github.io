@@ -87,6 +87,7 @@ body {
     font-size: 16px;
     letter-spacing: 0.5px;
 }
+
 .dropdown-custom {
     padding: 0;
     min-width: 22rem;
@@ -97,7 +98,8 @@ body {
 .dropdown-custom .footer-login {
     background: #f6f6f6;
 }
-.navbar ul.tabs {
+
+.navbar ul.tabs, .search-tab ul.tabs {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -113,31 +115,45 @@ body {
     font-family: 'Proxima-Bold';
     border-bottom: 0;
 }
+.search-tab ul.tabs li {
+    background: none;
+    color: #f85656;
+    display: inline-block;
+    padding: 15px 15px;
+    cursor: pointer;
+    border: solid 1px #f85656;
+    font-family: 'Proxima-Bold';
+}
 
-.navbar ul.tabs li.current {
+.navbar ul.tabs li.current, .search-tab ul.tabs li.current {
     background: #f85656;
     color: #fff;
     font-family: 'Proxima-Bold';
 }
+
 .navbar .tab-content .form-group p {
     font-size: 19px;
     font-family: 'Proxima-Semibold';
 }
+
 .navbar .tab-content .form-group label {
     font-family: 'Proxima-Semibold';
 }
+
 .navbar .tab-content .form-group label.float-right a {
     color: #f85656;
 }
+
 .navbar .tab-content {
     display: none;
     border: solid 1px #f85656;
 }
 
-.navbar .tab-content.current {
+.navbar .tab-content.current, .search-tab .tab-content.current {
     display: inherit;
 }
-.navbar ul.tabs li {
+
+.navbar ul.tabs li, .search-tab ul.tabs li {
     margin: 0;
     text-align: center;
 }
@@ -217,9 +233,12 @@ body {
     color: #f85656;
     background: transparent;
 }
-.card-room input, .card-room select {
+
+.card-room input,
+.card-room select {
     font-family: 'Proxima-Regular';
 }
+
 /*Card-Catalog*/
 
 .card-catalog .card-img-top {
@@ -449,6 +468,104 @@ body {
 .input-custom-newsletter {
     border: none;
 }
+
+/*Register Success*/
+
+.register_success_info .btn-custom-sb {
+    border-radius: 22.5px;
+}
+
+.register_success_info h5 {
+    letter-spacing: 0.7px;
+    font-size: 20px;
+    font-family: 'Proxima-Bold';
+    color: #454545;
+}
+
+.register_success_info p {
+    font-family: 'Proxima-Bold';
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #454545;
+}
+.navbar.navbar-register li {
+    display: inline-block;
+}
+.navbar.navbar-register .icon-user img {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+}
+
+/*Search Page*/
+hr.grid-aparteman {
+    border-top: 1px solid #979797;
+}
+.search-room .search-room-item .ac-aparteman a.ac-link {
+    font-family: 'Proxima-Semibold';
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search-room .search-room-item .ac-aparteman a.ac-link:after {
+    font-family: FontAwesome;
+    content: "\f107"; 
+    float: right;       
+    color: #000;  
+    margin: 4px 0 0 0;
+}
+.search-room .search-room-item .ac-aparteman a.ac-link.collapsed:after {
+    font-family: FontAwesome;
+    content: "\f106";
+    float: right;       
+    color: #000; 
+}
+.search-room .search-room-item .ac-aparteman .card-header {
+    border-bottom: solid 1px transparent;
+}
+.custom-control-label {
+    font-size: 16px;
+    font-family: 'Proxima-Regular';
+}
+.search-room .search-room-item .ac-aparteman .card-body {
+    padding: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.card-search {
+    margin-top: 0 !important;
+}
+/*Detail Page*/
+
+/*Order*/
+.order h4 {
+    font-family: 'Proxima-Semibold';
+}
+.free-card label {
+    font-family: 'Proxima-Semibold';
+}
+.free-card p {
+    font-family: 'Proxima-Regular';
+}
+.order .order-item, .order .order-price {
+    border-bottom: 2px solid #979797;
+    border-bottom-style: dashed;
+}
+.order .table.table-sm {
+    font-size: 14px;
+    font-family: 'Proxima-Regular';
+    color: #000;
+}
+.order .table.table-sm td:nth-child(odd), .order .table.table-sm th:nth-child(odd) {
+    text-align: left;
+}
+.order .table.table-sm td:nth-child(even), .order .table.table-sm th:nth-child(even) {
+    text-align: right;
+}
+.order img.img-order-review {
+    width: 100%;
+}
+/*Payment*/
 
 /*Footer*/
 

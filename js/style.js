@@ -62,3 +62,5 @@
  $('#login').click(function () {
      $('.dropdown-custom').css('min-width', '22rem');
  });
+
+/*==========Price Range========*/

@@ -1,5 +1,6 @@
 /*Custom skin for apartemanku.com*/
 
+
 /*
 1. Color
 2. Navbar
@@ -8,17 +9,17 @@
 
 */
 
+
 /*== 1. Color ==*/
 
 .bg-custom {
     background: #f85656;
 }
-
 .bg-footer {
     background: #222222;
 }
-
-.bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle:active,
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select .dropdown-toggle:active,
 .btn-lg:focus,
 .btn:focus,
 .btn-lg:active,
@@ -27,7 +28,14 @@
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
-
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background: #f85656;
+    color: #fff;
+}
+.dropdown-menu {
+    padding: 0;
+}
 .form-control:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -35,29 +43,26 @@
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
-
 input[type="text"],
 textarea {
     outline: none;
 }
-
-
-.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle, .btn-light:not(:disabled):not(.disabled).active {
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show>.btn-light.dropdown-toggle,
+.btn-light:not(:disabled):not(.disabled).active {
     background: transparent;
     border: 1px solid #ced4da;
 }
-
 ul.typeahead li a:not(:disabled):not(.disabled) {
     font-family: 'Proxima-Bold';
-    border: solid 1px rgb(151,151,151,0.2);
+    border: solid 1px rgb(151, 151, 151, 0.2);
     background: transparent;
     color: #212529;
 }
-
-.btn-primary:not(:disabled):not(.disabled):active  {
+.btn-primary:not(:disabled):not(.disabled):active {
     background-color: #f85656;
 }
-
 .btn-primary:not(:disabled):not(.disabled):focus {
     border-color: transparent;
     -webkit-box-shadow: none;
@@ -74,13 +79,11 @@ ul.typeahead li a:not(:disabled):not(.disabled) {
     background-color: #f85656;
     border-color: transparent;
 }
-
 .btn-custom-sb:hover,
 .btn-custom-sb:active {
     background-color: #f85656;
     border-color: transparent;
 }
-
 .btn-outline-custom {
     font-size: 14px;
     border-radius: 3px;
@@ -89,12 +92,10 @@ ul.typeahead li a:not(:disabled):not(.disabled) {
     color: #f85656;
     letter-spacing: 0.5px;
 }
-
 .btn-outline-custom:hover {
     background-color: #f85656;
     border-color: transparent;
 }
-
 .btn-custom-big {
     border: solid 1px transparent;
     border-radius: 25px;
@@ -106,28 +107,36 @@ ul.typeahead li a:not(:disabled):not(.disabled) {
     font-family: 'Open-Bold';
     font-size: 14px;
 }
-
 .btn-custom-big:hover {
     background: rgb(239, 35, 60, 0.2);
     color: #ef233c;
 }
-
 .btn:hover,
 .btn-lg:hover {
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
-
 .btn-facebook,
 .btn-facebook:hover {
     background: #3b5998;
     border-color: transparent;
 }
-
 .btn-twitter,
 .btn-twitter:hover {
     background: #4285f4;
     border-color: transparent;
+}
+.btn-trans,
+.btn-trans:hover {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #5b5b5b;
+    margin: 3px 0 0 0;
+}
+.dropdown-user .dropdown-menu .dropdown-item {
+    font-size: 14px;
 }
 
 /*== 3. Badge ==*/
@@ -144,11 +153,13 @@ ul.typeahead li a:not(:disabled):not(.disabled) {
 }
 
 /*== 4. Form ==*/
+
 .btn-light {
     background: transparent;
     border: 1px solid #ced4da;
 }
-.btn-light:hover, .btn-light:focus {
+.btn-light:hover,
+.btn-light:focus {
     background: transparent;
     border: 1px solid #ced4da;
 }
@@ -158,7 +169,8 @@ ul.typeahead li a:not(:disabled):not(.disabled) {
     border: none;
     padding: 0;
 }
-.bootstrap-select .dropdown-item.active, .bootstrap-select .dropdown-item:active {
+.bootstrap-select .dropdown-item.active,
+.bootstrap-select .dropdown-item:active {
     background-color: #f85656;
     font-family: 'Proxima-Bold';
     border: none;
@@ -166,6 +178,24 @@ ul.typeahead li a:not(:disabled):not(.disabled) {
 }
 .bootstrap-select .dropdown-menu li a {
     font-family: 'Proxima-Bold';
-    border: solid 1px rgb(151,151,151,0.2);
+    border: solid 1px rgb(151, 151, 151, 0.2);
     border-top: 0;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before, .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #f85656; 
+}
+.custom-radio .custom-control-input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+    color: #f85656; 
+    background-color: transparent;
+    border: 1px solid #ced4da;
+}
+a.link-aparteman {
+    color: #f85656;
 }
