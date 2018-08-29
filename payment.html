@@ -26,7 +26,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-register">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-register">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/homepage/logo/logo.png" class="img-fluid" alt="Logo-apartemanku">
@@ -50,7 +50,7 @@
                     </li>
                     <li class="nav-item">
                         <div class="row">
-                            <div class="col icon-user px-0">
+                            <div class="col icon-user px-0 hide-nav">
                                 <img src="images/register_success/profile.jpg" class="img-fluid">
                             </div>
                             <div class="col px-0">
@@ -80,9 +80,9 @@
         <div class="order my-5">
 
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 mb-4 mb-md-0">
                     <h4>Payment Method</h4>
-                    
+
                     <div class="search-tab">
                         <ul class="tabs row my-4">
                             <li class="tab-link current col" data-tab="tab-3">Bank Transfer</li>
@@ -95,38 +95,67 @@
 
                                 <div class="card mt-4">
                                     <div class="card-body free-card">
-                                        <form class="px-4 py-3">
-                                            <div class="form-group">
+                                        <h6 class="proxima-semibold">Pilih Rekening Tujuan</h6>
+                                        <form>
+                                            <div class="pay-option">
                                                 <div class="row">
-                                                    <div class="col">
-                                                        <label>Full Name</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                    <div class="col left">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                                                            <label class="custom-control-label" for="customRadio1">BCA</label>
+                                                        </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <label>Email</label>
-                                                        <input type="email" class="form-control" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col">
-                                                        <label>Country</label>
-                                                        <input type="text" class="form-control" placeholder="">
-                                                    </div>
-                                                    <div class="col">
-                                                        <label>Phone Number</label>
-                                                        <input type="password" class="form-control" placeholder="">
+                                                    <div class="col right">
+                                                        <img src="images/payment/icon/bca.png" class="img-fluid">
                                                     </div>
                                                 </div>
-                                                <div class="row mt-4">
-                                                    <div class="col-sm-9">
-                                                        <p>Dengan mengeklik tombol di bawah, Anda menyetujui <a href="" class="link-aparteman">Syarat dan Ketentuan</a> serta <a href="" class="link-aparteman">Kebijakan Privasi</a> dari Aparteman.</p>
+                                            </div>
+                                            <div class="pay-option">
+                                                <div class="row">
+                                                    <div class="col left">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio2">Mandiri</label>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-sm-3">
-                                                        <button type="button" class="btn btn-primary btn-custom-sb form-control">Continue</button>
+                                                    <div class="col right">
+                                                        <img src="images/payment/icon/mandiri.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pay-option">
+                                                <div class="row">
+                                                    <div class="col left">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio3">BNI</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col right">
+                                                        <img src="images/payment/icon/bni.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pay-option">
+                                                <div class="row">
+                                                    <div class="col left">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio4">BRI</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col right">
+                                                        <img src="images/payment/icon/bri.png" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
+                                        <div class="row">
+                                            <div class="col-sm-9"></div>
+                                            <div class="col-sm-3">
+                                                <button type="button" class="btn btn-primary btn-custom-sb form-control form-control float-right">Pay</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -137,34 +166,34 @@
 
                                 <div class="card mt-4">
                                     <div class="card-body free-card">
-                                        <form class="px-4 py-3">
+                                        <form class="">
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <label>Full Name</label>
+                                                        <label>Card Name</label>
                                                         <input type="text" class="form-control" placeholder="">
-                                                    </div>
-                                                    <div class="col">
-                                                        <label>Email</label>
-                                                        <input type="email" class="form-control" placeholder="">
                                                     </div>
                                                 </div>
                                                 <div class="row mt-2">
                                                     <div class="col">
-                                                        <label>Country</label>
+                                                        <label>Date Expired</label>
                                                         <input type="text" class="form-control" placeholder="">
                                                     </div>
                                                     <div class="col">
-                                                        <label>Phone Number</label>
+                                                        <label>CVV</label>
                                                         <input type="password" class="form-control" placeholder="">
                                                     </div>
                                                 </div>
-                                                <div class="row mt-4">
-                                                    <div class="col-sm-9">
-                                                        <p>Dengan mengeklik tombol di bawah, Anda menyetujui <a href="" class="link-aparteman">Syarat dan Ketentuan</a> serta <a href="" class="link-aparteman">Kebijakan Privasi</a> dari Aparteman.</p>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <label>Card Holder Name</label>
+                                                        <input type="text" class="form-control" placeholder="">
                                                     </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col-sm-9"></div>
                                                     <div class="col-sm-3">
-                                                        <button type="button" class="btn btn-primary btn-custom-sb form-control">Continue</button>
+                                                        <button type="button" class="btn btn-primary btn-custom-sb form-control form-control float-right">Pay</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -179,38 +208,41 @@
 
                                 <div class="card mt-4">
                                     <div class="card-body free-card">
-                                        <form class="px-4 py-3">
-                                            <div class="form-group">
+                                        <h6 class="proxima-semibold">Pilih Internet Bangking</h6>
+                                        <form>
+                                            <div class="pay-option">
                                                 <div class="row">
-                                                    <div class="col">
-                                                        <label>Full Name</label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                    <div class="col left">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio1a" name="customRadio" class="custom-control-input" checked>
+                                                            <label class="custom-control-label" for="customRadio1a">BCA Klik Pay</label>
+                                                        </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <label>Email</label>
-                                                        <input type="email" class="form-control" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="row mt-2">
-                                                    <div class="col">
-                                                        <label>Country</label>
-                                                        <input type="text" class="form-control" placeholder="">
-                                                    </div>
-                                                    <div class="col">
-                                                        <label>Phone Number</label>
-                                                        <input type="password" class="form-control" placeholder="">
+                                                    <div class="col right">
+                                                        <img src="images/payment/icon/bca.png" class="img-fluid">
                                                     </div>
                                                 </div>
-                                                <div class="row mt-4">
-                                                    <div class="col-sm-9">
-                                                        <p>Dengan mengeklik tombol di bawah, Anda menyetujui <a href="" class="link-aparteman">Syarat dan Ketentuan</a> serta <a href="" class="link-aparteman">Kebijakan Privasi</a> dari Aparteman.</p>
+                                            </div>
+                                            <div class="pay-option">
+                                                <div class="row">
+                                                    <div class="col left">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio2a" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio2a">CIMB Click</label>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-sm-3">
-                                                        <button type="button" class="btn btn-primary btn-custom-sb form-control">Continue</button>
+                                                    <div class="col right">
+                                                        <img src="images/payment/icon/mandiri.png" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
+                                        <div class="row">
+                                            <div class="col-sm-9"></div>
+                                            <div class="col-sm-3">
+                                                <button type="button" class="btn btn-primary btn-custom-sb form-control form-control float-right">Pay</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +306,7 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-6 col-sm-6 col-md-2">
                     <p>Navigations</p>
                     <ul class="list-unstyled">
                         <li><a href="maintenance.html">Features</a></li>
@@ -283,7 +315,7 @@
                         <li><a href="about.html">Testimonials</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-6 col-sm-6 col-md-2">
                     <p>Learn &amp; Grow</p>
                     <ul class="list-unstyled">
                         <li><a href="maintenance.html">Career</a></li>
@@ -292,7 +324,7 @@
                         <li><a href="about.html">Reviews</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-6 col-sm-6 col-md-2">
                     <p>About Us</p>
                     <ul class="list-unstyled">
                         <li><a href="maintenance.html">Team’s</a></li>
@@ -301,7 +333,7 @@
                         <li><a href="about.html">Terms Conditions</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-6 col-sm-6 col-md-2">
                     <p>Social Media</p>
                     <ul class="list-unstyled">
                         <li><a href="maintenance.html">Facebook</a></li>
@@ -310,7 +342,7 @@
                         <li><a href="about.html">LinkedIn</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-6 col-sm-6 col-md-4">
                     <div class="footers-logo">
                         <img src="images/homepage/logo/logo-footer.svg" class="img-fluid" alt="Logo">
                     </div>
