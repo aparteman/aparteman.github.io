@@ -785,7 +785,7 @@ hr.grid-aparteman {
 
 @media screen and (max-width: 1023px) {
 	.card-catalog .card-img-top {
-		height: auto;
+		height: 30vh;
 	}
 }
 
@@ -807,6 +807,9 @@ hr.grid-aparteman {
 	}
 	.bg-footer {
     padding: 50px 0 20px 0;
+	}
+	.carousel-item {
+		height: auto;
 	}
 }
 @media screen and (max-width: 767px) {
