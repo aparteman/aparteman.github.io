@@ -26,7 +26,7 @@
 <body>
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg fixed-top navbar-register">
+	<nav class="navbar navbar-light navbar-expand-lg fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
                 <img src="images/homepage/logo/logo.png" class="img-fluid" alt="Logo-apartemanku">
@@ -43,32 +43,13 @@
 						<a class="nav-link" href="#">Promotions</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#">FAQ</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<div class="row">
-							<div class="col icon-user px-0">
-								<img src="images/register_success/profile.jpg" class="img-fluid">
-							</div>
-							<div class="col px-0">
-								<div class="dropdown dropdown-user">
-									<button class="btn btn-trans btn-custom-sb dropdown-toggle" type="button" data-toggle="dropdown">Sulton Hand</button>
-
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Wishlist</a>
-										<a class="dropdown-item" href="#">My Order</a>
-										<a class="dropdown-item" href="#">Log Out</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="nav-item">
-						<button type="button" class="btn btn-primary btn-outline-primary btn-outline-custom">Submit My Apartment</button>
 					</li>
 				</ul>
 			</div>
@@ -77,116 +58,54 @@
 
 	<!-- Content -->
 	<div class="container">
-		<div class="order payment-detail my-5">
+		<div class="login my-5">
 
 			<div class="row">
-				<div class="col-md-12 col-lg-8">
-					<h4>Payment Instructions</h4>
+				<div class="col-sm-12 col-md-6 mx-md-auto col-lg-4 mx-lg-auto">
+
 					<div class="search-tab">
 						<div class="card mt-4">
 							<div class="card-body free-card">
-								<h6 class="proxima-semibold">1. Make Payment Before</h6>
-								<div class="pay-option">
-									<div class="row">
-										<div class="col">
-											<label>Today 00:59:00 AM</label>
+
+								<form class="px-4 py-3">
+									<div class="form-group">
+									<p>Log in to your account</p>
+										<label>Email or mobile no.</label>
+										<input type="email" class="form-control" placeholder="">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col">
+												<label>Password</label>
+											</div>
 										</div>
+
+										<input type="password" class="form-control" placeholder="">
+									</div>
+									<div class="row">
+									<div class="col">
+										<label class="float-right"><a href="#" class="link-aparteman">Forgot Password</a></label>
 									</div>
 								</div>
-								<h6 class="proxima-semibold">2. Please Transfer To </h6>
-								<div class="py-3">
-									<div class="row">
-										<div class="col">
-											<div class="card card-bank">
-												<h5 class="card-header proxima-semibold">Bank BCA</h5>
-												<div class="card-body">
-
-													<table class="table table-borderless">
-														<tbody>
-															<tr>
-																<td>Account Number</td>
-																<td>748763876273</td>
-																<td></td>
-															</tr>
-															<tr class="border-payment">
-																<td>Account Holder Name</td>
-																<td>PT. Apartemanku Indo</td>
-																<td>
-																	<img src="images/payment/icon/bca.png" class="img-fluid">
-																</td>
-															</tr>
-															<tr>
-																<td>Transfer Amount</td>
-																<td>Rp. 467.879</td>
-																<td></td>
-															</tr>
-														</tbody>
-													</table>
-
-												</div>
+									<button type="submit" class="btn btn-primary btn-custom-sb form-control my-2">Sign in</button>
+								</form>
+								<hr>
+								<div class="footer-login">
+									<div class="px-4 pb-4">
+										<p><b>Belum punya akun ?</b> silahkan register terlebih dahulu untuk melanjutkan proses transaksi.</p>
+										<div class="row">
+											<div class="col-12">
+												<button type="submit" class="btn btn-primary btn-custom-sb form-control my-2">Register</button>
 											</div>
 										</div>
 									</div>
 								</div>
-								<h6 class="proxima-semibold">3. Complate Your Payment</h6>
-								<div class="pay-option">
-									<div class="row">
-										<div class="col">
-											<p class="proxima-regular">Once your payment is confirmed, we will send your flight e-ticket to your email address.</p>
-											<form>
-												<div class="payment-upload">
-													<div class="form-group">
-														<input type="file" class="form-control-file">
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-4">
-					<h4 class="vhd">.</h4>
-					<div class="card mt-4">
-						<div class="card-body free-card">
-							<div class="order-item">
-								<h4>Student Park Castle</h4>
-							</div>
-							<div class="order-price">
-								<table class="table table-sm table-borderless my-4">
-									<tr>
-										<td>Transaction Number</td>
-										<td>8598789489738</td>
-									</tr>
-									<tr>
-										<td>Kategori</td>
-										<td>harian</td>
-									</tr>
-									<tr>
-										<td>Check - In</td>
-										<td>28 Agustus 2018</td>
-									</tr>
-									<tr>
-										<td>Check - Out</td>
-										<td>31 Agustus 2018</td>
-									</tr>
-									<tr>
-										<td>Type Room</td>
-										<td>Studio</td>
-									</tr>
-									<tr>
-										<td>Destination</td>
-										<td>Yogyakarta</td>
-									</tr>
-								</table>
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 

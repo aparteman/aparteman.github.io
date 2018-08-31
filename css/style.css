@@ -146,7 +146,7 @@ body {
 }
 
 .navbar .tab-content .form-group label.float-right a {
-	color: #f85656;
+	color: #f85656 !important;
 }
 
 .navbar .tab-content {
@@ -208,7 +208,14 @@ body {
 	-webkit-box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.03);
 	box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.03);
 }
-
+.payment-detail .card-bank {
+	border: solid 1px rgb(151, 151, 151, 0.2);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.payment-detail tr.border-payment {
+	border-bottom: solid 1px #979797;
+}
 .card-room {
 	margin-top: -49px;
 	z-index: 999;
@@ -737,7 +744,14 @@ hr.grid-aparteman {
 	color: #f85656;
 	font-family: "Proxima-Bold";
 }
-
+/*login dashboard*/
+.login-dashboard img {
+	margin: 0 auto;
+	display: table;
+}
+.login-dashboard .login-dashboard-info {
+	text-align: center;
+}
 /*Footer*/
 
 .bg-footer {
@@ -820,3 +834,4 @@ hr.grid-aparteman {
 		font-size: 14px;
 	}
 }
+
