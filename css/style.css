@@ -822,9 +822,6 @@ hr.grid-aparteman {
 	.bg-footer {
     padding: 50px 0 20px 0;
 	}
-	.carousel-item {
-		height: auto;
-	}
 }
 @media screen and (max-width: 767px) {
 	.carousel.slide .carousel-inner .carousel-item h3 {
